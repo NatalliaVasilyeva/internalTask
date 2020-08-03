@@ -13,6 +13,9 @@ public interface BirdRepository extends JpaRepository<Bird, String> {
 
     List<Bird> findAllByName(String name);
 
+//    @Query(value="SELECT * FROM birds  limit ?2 offset ?1", nativeQuery = true)
+//    Bird saveAndFlush(Bird bird);
+
     @Query(value="SELECT * FROM birds  limit ?2 offset ?1", nativeQuery = true)
     public List<Bird> findByAttributeWithOffsetAndLimit(int offset, int limit);
 

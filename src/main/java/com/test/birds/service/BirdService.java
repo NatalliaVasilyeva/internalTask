@@ -20,10 +20,6 @@ public class BirdService {
         this.birdRepository = birdRepository;
     }
 
-    public void createBird(Bird bird) {
-        birdRepository.save(bird);
-    }
-
     public List<Bird> findAll() {
         return birdRepository.findAll();
     }
@@ -34,6 +30,10 @@ public class BirdService {
 
     public List<Bird> findAllByName(String name) {
         return birdRepository.findAllByName(name);
+    }
+
+    public Bird createBird(Bird bird) {
+       return birdRepository.saveAndFlush(bird);
     }
 
     public List<Bird> findAllAndSort(String attribute, String typeOfSort) {

@@ -7,8 +7,7 @@ public enum Species {
     SPARROW ("sparrow"),
     MAGPIE ("magpie"),
     CROW ("crow"),
-    TITMOUSE ("titmouse"),
-    RED_WHITE ("red & white");
+    TITMOUSE ("titmouse");
 
     private String species;
 
