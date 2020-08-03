@@ -9,4 +9,4 @@ a) go to project folder
 b) write command - mvn spring-boot:run
 
 
-After that you can test application by Postman
+After that you can test application by Postman. Please, use form_data in body, not row with json
